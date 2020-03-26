@@ -29,6 +29,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 
 	public static final int COMMAND_SAVE_IMAGE = 1;
 	public static final int COMMAND_RESET_IMAGE = 2;
+	public static final int COMMAND_SAVE_IMAGE_IN_DIMENSIONS = 2;
 
 	private RSSignatureCaptureContextModule mContextModule;
 
@@ -120,7 +121,9 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 				"saveImage",
 				COMMAND_SAVE_IMAGE,
 				"resetImage",
-				COMMAND_RESET_IMAGE);
+				COMMAND_RESET_IMAGE,
+				"saveImageInDimensions",
+				COMMAND_SAVE_IMAGE_IN_DIMENSIONS);
 	}
 
 	@Override
@@ -131,6 +134,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 		Assertions.assertNotNull(view);
 		Assertions.assertNotNull(args);
 		switch (commandType) {
+			case COMMAND_SAVE_IMAGE_IN_DIMENSIONS:
 			case COMMAND_SAVE_IMAGE: {
 				view.saveImage();
 				return;

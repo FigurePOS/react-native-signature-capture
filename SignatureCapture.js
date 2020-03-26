@@ -78,6 +78,14 @@ class SignatureCapture extends React.Component {
             [],
         );
     }
+    
+    saveImageInDimensions(width, height) {
+        UIManager.dispatchViewManagerCommand(
+            ReactNative.findNodeHandle(this),
+            UIManager.getViewManagerConfig('RSSignatureView').Commands.saveImageInDimensions,
+            [width, height],
+        );
+    }
 
     resetImage() {
         UIManager.dispatchViewManagerCommand(

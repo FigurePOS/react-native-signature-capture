@@ -11,5 +11,6 @@
 -(void) onSaveButtonPressed;
 -(void) onClearButtonPressed;
 -(void) saveImage;
+-(void) saveImageInDimensions:(CGFloat)width withHeight:(CGFloat)height;
 -(void) erase;
 @end

@@ -37,6 +37,14 @@ RCT_EXPORT_METHOD(saveImage:(nonnull NSNumber *)reactTag) {
 	});
 }
 
+RCT_EXPORT_METHOD(saveImageInDimensions:(nonnull NSNumber *)reactTag withWidth:(nonnull NSNumber *)width withHeight:( nonnull NSNumber *)height) {
+    CGFloat widthFloat = [width doubleValue];
+    CGFloat heightFloat = [height doubleValue];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.signView saveImageInDimensions:widthFloat withHeight:heightFloat];
+    });
+}
+
 RCT_EXPORT_METHOD(resetImage:(nonnull NSNumber *)reactTag) {
 	dispatch_async(dispatch_get_main_queue(), ^{
 		[self.signView erase];
@@ -59,3 +67,4 @@ RCT_EXPORT_METHOD(resetImage:(nonnull NSNumber *)reactTag) {
 }
 
 @end
+
