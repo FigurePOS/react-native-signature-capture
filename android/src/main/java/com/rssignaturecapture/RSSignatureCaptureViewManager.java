@@ -29,7 +29,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
 
 	public static final int COMMAND_SAVE_IMAGE = 1;
 	public static final int COMMAND_RESET_IMAGE = 2;
-	public static final int COMMAND_SAVE_IMAGE_IN_DIMENSIONS = 2;
+	public static final int COMMAND_SAVE_IMAGE_IN_DIMENSIONS = 3;
 
 	private RSSignatureCaptureContextModule mContextModule;
 
