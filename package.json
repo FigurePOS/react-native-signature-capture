@@ -1,6 +1,6 @@
 {
   "name": "@figurepos/react-native-signature-capture",
-  "version": "1.0.0",
+  "version": "0.4.10",
   "description": "Lets users sign their signatures",
   "main": "SignatureCapture.js",
   "scripts": {
@@ -8,7 +8,8 @@
   },
   "files": [
     "android",
-    "ios"
+    "ios",
+    "react-native-signature-capture.podspec"
   ],
   "repository": "https://github.com/FigurePOS/react-native-signature-capture.git",
   "keywords": [
