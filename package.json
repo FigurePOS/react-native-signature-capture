@@ -1,15 +1,16 @@
 {
-  "name": "react-native-signature-capture",
-  "version": "0.4.10",
+  "name": "@figurepos/react-native-signature-capture",
+  "version": "1.0.0",
   "description": "Lets users sign their signatures",
   "main": "SignatureCapture.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RepairShopr/react-native-signature-capture.git"
-  },
+  "files": [
+    "android",
+    "ios"
+  ],
+  "repository": "https://github.com/FigurePOS/react-native-signature-capture.git",
   "keywords": [
     "react-component",
     "react-native",
@@ -27,5 +28,9 @@
   "homepage": "https://github.com/RepairShopr/react-native-signature-capture#readme",
   "dependencies": {
     "prop-types": "^15.5.10"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
   }
 }
